@@ -1,0 +1,264 @@
+ .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .navbar-brand img {
+      height: 40px;
+    }
+    .nav-link {
+      color: #333 !important;
+      font-weight: 500;
+    }
+    .enquire-btn {
+      border: 1px solid black;
+      padding: 6px 16px;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    .main-banner img {
+      width: 100%;
+      height: 650px;
+      object-fit: cover;
+     
+    } 
+    @media screen and (max-width:700px){
+        .main-banner img{ 
+            height: 200px;
+        }
+        
+    }
+    /* home second part start  */
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .section-subtitle {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .custom-btn {
+      border: 1px solid #000;
+      padding: 10px 20px;
+      font-weight: 500;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+    .custom-btn:hover {
+      background-color: #000;
+      color: #fff;
+      transition: 0.3s ease;
+    }
+    .custom-btn svg {
+      margin-left: 8px;
+    }
+    /* home second part end  */
+
+    /* home third part start  */
+    .info-box {
+      background-color: #2f3e46;
+      color: white;
+      padding: 40px;
+      height: 100%;
+    }
+    .info-box h2 {
+      font-size: 2.75rem;
+      font-weight: 700;
+    }
+    .info-box p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .info-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 991.98px) {
+      .info-box {
+        padding: 10px 10px;
+        
+      }
+    }
+    @media screen and (max-width:700px) {
+        .info-img{ 
+         margin-top: 30px;
+        }
+        
+    }
+    /* .homeimage3 .info-img{ 
+        height: 500px;
+        width: 600px;
+        margin-left: 100px;
+    } */
+    /* home thist part end  */
+
+  /* home fourt part  start  */
+  .title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .subtitle {
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    /* home fourt part end  */
+
+    /* home five part start  */
+    .heading {
+      font-weight: 700;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* home five part end  */
+
+    /* home six part start  */
+    .env-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .contact-btn {
+      border: 1px solid #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      background: transparent;
+      transition: 0.3s ease;
+    }
+    .contact-btn:hover {
+      background: #000;
+      color: #fff;
+    }
+    .arrow {
+      margin-left: 8px;
+    }
+
+    /* home six part end  */
+
+    /* home seven part start  */
+    .plot-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .contact-btn {
+      border: 1px solid #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      background: transparent;
+      transition: 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .arrow {
+      margin-left: 8px;
+    }
+    /* home seven part end  */
+
+    footer a:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+  }
+
+  /* preloadr start */
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .preloader-content {
+    text-align: center;
+  }
+
+  /* Typing animation */
+  .typing-text {
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    color: #00d82f;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #e0b553;
+    width: 0;
+    animation: typing 3s steps(20) forwards, blink 0.7s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 14ch } /* length of 'Industrial Park' */
+  }
+
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #07fb2b; }
+  }
+
+  /* Spinner */
+  .spinner {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #00e043;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .typing-text {
+    font-weight: bold;
+    font-size: 86px; /* आप चाहें तो 40px या 48px भी कर सकते हैं */
+  }
+  /* preloder end  */

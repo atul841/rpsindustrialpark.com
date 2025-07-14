@@ -1,0 +1,12 @@
+this is part of the section part in the data base when you are connect th epart that the use this database epart 
+CREATE TABLE ContactForm (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    FirstName NVARCHAR(100),
+    LastName NVARCHAR(100),
+    MobileNumber NVARCHAR(15),
+    Email NVARCHAR(100),
+    ProjectType NVARCHAR(100),
+    CompanyName NVARCHAR(100),
+    Message NVARCHAR(MAX),
+    SubmittedAt DATETIME DEFAULT GETDATE()
+);
