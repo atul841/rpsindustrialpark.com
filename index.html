@@ -429,75 +429,107 @@
 
     <!-- home ten part start now  -->
     <br>
+    <style>
+      input::placeholder,
+      textarea::placeholder,
+      select {
+        background-color: white;
+        color: black;
+      }
+
+      /* Optional - to override transparency */
+      input,
+      textarea,
+      select {
+        background-color: white !important;
+        color: black !important;
+      }
+    </style>
     <form action="submit_form.php" method="POST">
-      <section class="py-5 text-white"
-        style="background: url('./image/image-4.jpg') center/cover no-repeat;">
+      <section
+        class="py-5 text-white"
+        style="background: url('./image/image-4.jpg') center/cover no-repeat"
+      >
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center mb-4">
-              <small class="name d-block"
-                style="color: rgb(0, 0, 0); @media screen and (max-width:500px) {
-          .name{ 
-            color: black;
-          }
-          
-        }">Let's Connect</small>
-              <h1 class="name1fw-bold"
-                style="color: rgb(0, 0, 0); @media screen and (max-width:500px) {
-          .name1{ 
-            color: black;
-          }
-          
-        }">Allow us to help you find what you’re looking for.</h1>
+              <small class="d-block" style="color: black">Let's Connect</small>
+              <h1 class="fw-bold" style="color: black">
+                Allow us to help you find what you’re looking for.
+              </h1>
             </div>
           </div>
-          <form>
-            <div class="row g-3" ">
-              <div class="col-md-6">
-                <input type="text"
-                  class="form-control bg-transparent border-bottom text-white"
-                  name="first_name" placeholder="First Name" required>
-              </div>
-              <div class="col-md-6">
-                <input type="text"
-                  class="form-control bg-transparent border-bottom text-white"
-                  name="last_name" placeholder="Last Name" required>
-              </div>
-              <div class="col-md-6">
-                <input type="text"
-                  class="form-control bg-transparent border-bottom text-white"
-                  name="mobile_name" placeholder="Mobile Number" required>
-              </div>
-              <div class="col-md-6">
-                <input type="email"
-                  class="form-control bg-transparent border-bottom text-white"
-                  name="email" placeholder="Company Mail Id*" required>
-              </div>
-              <div class="col-12">
-                <select
-                  class="form-select bg-transparent border-bottom text-white"
-                  style="color: black;" name="project_type" required>
-                  <option selected disabled>Select Project</option>
-                  <option style="color: black;">Logistics Park</option>
-                  <option style="color: black;">Industrial Zone</option>
-                  <option style="color: black;">Warehousing Space</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <input type="text"
-                  class="form-control bg-transparent border-bottom text-white"
-                  placeholder="Company Name" name="company_name" required>
-              </div>
-              <div class="col-12">
-                <textarea
-                  class="form-control bg-transparent border-bottom text-white"
-                  placeholder="Message" rows="3" name="message"></textarea>
-              </div>
-              <div class="col-12 text-center">
-                <button type="submit" class="btn btn-light px-5">Submit</button>
-              </div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control border-bottom"
+                name="first_name"
+                placeholder="First Name"
+                required
+              />
             </div>
-          </form>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control border-bottom"
+                name="last_name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control border-bottom"
+                name="mobile_name"
+                placeholder="Mobile Number"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control border-bottom"
+                name="email"
+                placeholder="Company Mail Id*"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <select
+                class="form-select border-bottom"
+                name="project_type"
+                required
+              >
+                <option selected disabled>Select Project</option>
+                <option>Logistics Park</option>
+                <option>Industrial Zone</option>
+                <option>Warehousing Space</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control border-bottom"
+                placeholder="Company Name"
+                name="company_name"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <textarea
+                class="form-control border-bottom"
+                placeholder="Message"
+                rows="3"
+                name="message"
+              ></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-light px-5">Submit</button>
+            </div>
+          </div>
         </div>
       </section>
     </form>
